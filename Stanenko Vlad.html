@@ -1,0 +1,86 @@
+<!--
+    Cтаненко Владислав, група ТЗ-91
+    Створення форми за допомогою HTML
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>HTML форма Станенка Владислава</title>
+        <style>
+            .center {
+             width: 750px; /* Ширина елемента в пікселях */
+             padding: 150px; /* Поля навколо тексту */
+             margin: auto; /* Вірівнювання по центру */
+             background: rgb(255, 255, 255); /* Колір фону */
+            }
+           </style>
+    </head>
+
+    <body>
+        <div class="center">
+
+            <form action="#" method="post" enctype="multipart/form-data">
+                <table border="3" align="center" width="66%">
+
+                    <tr>
+                        <td colspan="2"><center><b><h1>Joseph's Shawarma Shop 💝🎊</h1></b></center></td>
+                    </tr>
+
+                    <tr>
+                        <td><center><b>👨🏻 Customer name 👩🏻</center></b></td>
+                        <td><center><input placeholder="Please, enter your name." type="text" name="username" required></center></td>
+                    </tr>
+
+                    <tr>
+                        <td><center><b>A Kind of Shawarma:</b></center></td>
+                        <td>
+                            <input checked type="radio" name="pizza" value="Best"> Classic <b>70 UAH</b>
+                            <input type="radio" name="pizza" value="Medium" style="margin-left: 5px;"> Cheesy <b>80 UAH</b>
+                            <br><input type="radio" name="pizza" value="Worst"> Spicy <b>75 UAH</b>
+                            <input type="radio" name="pizza" value="Medium" style="margin-left: 15px;"> With Mushrooms <b>85 UAH</b>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><center><b>Shawarma size & type:</b></center></td>
+                        <td><select name="color" style="margin-left: 5px;">
+                            <option value="mini">Mini size + 0 UAH</option>
+                            <option selected value="stdrt">Standard size + 15 UAH</option>
+                            <option value="king">King size + 30 UAH</option>
+                        </select>
+                        <select name="color" style="margin-left: 3px;">
+                            <option value="doner">Doner-kebab + 5 UAH</option>
+                            <option selected value="pita">Pitta bread + 0 UAH</option>
+                            <option value="fagita">Fajitas + 10 UAH</option>
+                        </select></td>
+                    </tr>
+
+                    <tr>
+                        <td><center><b>Refreshing drinks 0.5l</b></center></td>
+                        <td><input type="checkbox" name="drink" style="margin-left: 35px;"> Pepsi
+                            <input type="checkbox" name="drink" style="margin-left: 20.8px;"> Coca-Cola
+                            <input type="checkbox" name="drink" style="margin-left: 20px;"> Sprite
+                            <br><input type="checkbox" name="drink" style="margin-left: 35px;"> Fanta
+                            <input type="checkbox" name="drink" style="margin-left: 20px;"> Dr. Pepper
+                            <input type="checkbox" name="drink" style="margin-left: 20px;"> 7 Up</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"><b>Additions to the order:</b><br>
+                            <textarea placeholder="Please, provide additional details of your order if you wish." name="text" cols="66" rows="6"></textarea></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <center><button type="submit">Pay for the order 💵</button>
+                            <button type="reset" style="margin-left: 80px;">Cancel order form ❌</button></center></td>
+                    </tr>
+
+                </table>
+            </form>
+
+        </div>
+    </body>
+</html>
